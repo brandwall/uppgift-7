@@ -1,0 +1,128 @@
+:root {
+    --primary-color: rgb(204,0,40);
+    --primary-bg-color: rgb(45,45,45);
+    background-color: black;
+}
+
+header {
+    display: flex;
+
+    width: 100%;
+    justify-content: center;
+    height: 150px;
+}
+
+header img {
+    align-self: center;
+    height: 100px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+    flex: 1;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 500px !important; */
+    padding: 20px;
+}
+.ad-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(204,0,40);
+    max-width: 600px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0px solid orange;
+    border-radius: 10px;
+    color: white;
+}
+.ad-box p {
+    text-overflow:clip;
+    padding: 0px 20px;
+}
+.ad-box h1 {
+    text-align:center;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.ad-box .middle {
+    display: flex;
+    background-color: var(--primary-bg-color);
+    flex-direction: row;
+
+}
+.ad-box .middle dt {
+    font-weight: bold;
+}
+.ad-box .middle dd {
+    margin:0;
+    font-size: 14px;
+}
+
+.trailer-container {
+    display: flex;
+
+}
+iframe {
+    border-radius: 5px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+button {
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    height: 40px;
+    padding: 10px;
+    font-weight:bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0;
+    border: none;
+    margin: 0px 10px 0px 10px;
+}
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-bg-color);
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+footer {
+    display:flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-color);
+    justify-content: space-evenly;
+    color: white;
+}
